@@ -61,7 +61,7 @@ struct CalculatorBrain {
     func getSettings() -> String? {
         // The results page shows a plain text string for the "settings"
         // use the data collected to generate the contents of this label
-        let peopleString = "Split between " + String(format: "%.0f", self.splitCount!) + " people"
+        let peopleString = "Split between " + String(format: "%.1f", self.splitCount!) + " people"
         let tipString = ", with a " + String(format: "%.0f", tipPercent!*100) + "% tip."
         let settingsString = peopleString + tipString
         return settingsString
