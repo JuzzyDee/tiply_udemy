@@ -71,6 +71,10 @@ class CalculatorViewController: UIViewController {
         
         // And select the sender for this event
         sender.isSelected = true
+        
+        // Make sure the custom field is empty
+        customTipField.text = ""
+        
         let tipFloat: Float = Float(sender.currentTitle!.replacingOccurrences(of: "%", with: ""))!/100
         calculatorBrain.tipPercent = tipFloat
     }
